@@ -170,6 +170,7 @@
   border-radius: 20px;
   display: block;
   font-weight: 600;
+  visibility: visible;
 }
 
 .incoming-message .message__author {
