@@ -170,6 +170,7 @@
   border-radius: 20px;
   display: block;
   font-weight: 600;
+  visibility: visible;
 }
 
 .incoming-message .message__author {
@@ -183,6 +184,40 @@
   border-bottom-left-radius: 0px;
   color: white;
   background-image: linear-gradient(to right, #7b4397, #dc2430);
+  animation: count 4s linear infinite;
+}
+
+@keyframes count {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(+100em);
+  }
+  20% {
+    transform: translateY(+200em);
+  }
+  30% {
+    transform: translateY(+300em);
+  }
+  40% {
+    transform: translateY(+400em);
+  }
+  50% {
+    transform: translateY(+500em);
+  }
+  60% {
+    transform: translateY(+600em);
+  }
+  70% {
+    transform: translateY(+700em);
+  }
+  80% {
+    transform: translateY(+800em);
+  }
+  90% {
+    transform: none;
+  }
 }
 
 .sent-message .message__bubble {
